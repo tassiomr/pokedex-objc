@@ -18,13 +18,24 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.tableView = UITableView.new;
-  self.safeArea = self.view.layoutMarginsGuide;
   [self setupTableView];
   [[self navigationItem] setTitle:@"Pokedex"];
   [[[self navigationController] navigationBar] setPrefersLargeTitles:TRUE];
-  
+  self.service = [[PokedexService alloc] init];
+  [self retriveData];
   
   // Do any additional setup after loading the view.
+}
+
+- (void)callback:(NSMutableArray<Pokemon *> *)pokemons {
+  _pokemons = pokemons;
+  [[self tableView] reloadData];
+}
+
+-(void) retriveData {
+  [[self service] getPokemons:^(NSMutableArray<Pokemon *> * _Nonnull pokemons) {
+    [self callback:pokemons];
+  }];
 }
 
 -(void) setupTableView {
@@ -40,14 +51,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return 10;
+  return self.pokemons.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
   UITableViewCell *cell = [[self tableView] dequeueReusableCellWithIdentifier:@"cell" forIndexPath: indexPath];
   
-  cell.textLabel.text = @"POKEMOM GOLDEN SKY";
+  Pokemon *pokemon = self.pokemons[indexPath.row];
+  
+  cell.textLabel.text = pokemon.name;
   return cell;
 }
 

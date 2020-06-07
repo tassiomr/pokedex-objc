@@ -12,11 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Pokemon : NSObject
+@property (nonatomic, nonnull) NSString *uuid;
 @property (nonatomic, nonnull) NSString *name;
 @property (nonatomic, nonnull) NSArray<NSString *> *type;
 @property (nonatomic, nonnull) BaseStatus *baseStatus;
 
--(instancetype) initWithName: (NSString *) name andTypes: (NSArray<NSString *> *) type andBaseStatus: (BaseStatus *) baseStatus;
+-(instancetype) initWithName: (NSString *) name andTypes: (NSArray<NSString *> *) type andBaseStatus: (BaseStatus *) baseStatus uuid: (NSString *) uuid;
 
 @end
 

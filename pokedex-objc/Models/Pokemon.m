@@ -10,8 +10,9 @@
 
 @implementation Pokemon
 
-- (instancetype)initWithName:(NSString *)name andTypes:(NSArray<NSString *> *)type andBaseStatus:(BaseStatus *)baseStatus {
+- (instancetype)initWithName:(NSString *)name andTypes:(NSArray<NSString *> *)type andBaseStatus:(BaseStatus *)baseStatus uuid:(NSString *)uuid {
   if(self = [super init]) {
+    _uuid = uuid;
     _name = name;
     _baseStatus = baseStatus;
     _type = type;

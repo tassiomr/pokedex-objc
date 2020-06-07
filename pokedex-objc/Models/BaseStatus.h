@@ -12,26 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseStatus : NSObject
 
-@property (nonatomic, nonnull) NSInteger *hp;
-@property (nonatomic, nonnull) NSInteger *attack;
-@property (nonatomic, nonnull) NSInteger *defense;
-@property (nonatomic, nonnull) NSInteger *spAttack;
-@property (nonatomic, nonnull) NSInteger *spDefense;
-@property (nonatomic, nonnull) NSInteger *speed;
+@property (nonatomic) long hp;
+@property (nonatomic) long attack;
+@property (nonatomic) long defense;
+@property (nonatomic) long spAttack;
+@property (nonatomic) long spDefense;
+@property (nonatomic) long speed;
 
--(instancetype) initWithHp: (NSInteger *) hp attack: (NSInteger *) attcack defense: (NSInteger *) defense spAttack: (NSInteger *) spAttack spDefense: (NSInteger *) spDefense speed: (NSInteger *) speed;
+-(instancetype) initWithHp: (long) hp attack: (long) attcack defense: (long) defense spAttack: (long) spAttack spDefense: (long) spDefense speed: (long) speed;
 
 @end
 
 NS_ASSUME_NONNULL_END
-
-
-//
-//"base": {
-//  "HP": 45,
-//  "Attack": 49,
-//  "Defense": 49,
-//  "Sp. Attack": 65,
-//  "Sp. Defense": 65,
-//  "Speed": 45
-//}

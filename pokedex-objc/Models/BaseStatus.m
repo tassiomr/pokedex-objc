@@ -9,7 +9,9 @@
 #import "BaseStatus.h"
 
 @implementation BaseStatus
-- (instancetype)initWithHp:(NSInteger *)hp attack:(NSInteger *)attcack defense:(NSInteger *)defense spAttack:(NSInteger *)spAttack spDefense:(NSInteger *)spDefense speed:(NSInteger *)speed {
+
+- (instancetype)initWithHp:(long)hp attack:(long)attcack defense:(long)defense spAttack:(long)spAttack spDefense:(long)spDefense speed:(long)speed {
+  
   if(self = [super init]) {
     _hp = hp;
     _attack = attcack;

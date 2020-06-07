@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1812E50E248C76B50011C6F3 /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812E50D248C76B50011C6F3 /* Pokemon.m */; };
-		1812E511248C77040011C6F3 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 1812E510248C77040011C6F3 /* pokedex.json */; };
 		1812E514248C77F10011C6F3 /* BaseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812E513248C77F10011C6F3 /* BaseStatus.m */; };
+		1812E516248C7BC40011C6F3 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 1812E515248C7BC40011C6F3 /* pokedex.json */; };
 		18D3F09B248C716A00A9D6A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F09A248C716A00A9D6A5 /* AppDelegate.m */; };
 		18D3F09E248C716A00A9D6A5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F09D248C716A00A9D6A5 /* SceneDelegate.m */; };
 		18D3F0A1248C716A00A9D6A5 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3F0A0248C716A00A9D6A5 /* HomeController.m */; };
@@ -21,9 +21,9 @@
 /* Begin PBXFileReference section */
 		1812E50C248C76B50011C6F3 /* Pokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
 		1812E50D248C76B50011C6F3 /* Pokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pokemon.m; sourceTree = "<group>"; };
-		1812E510248C77040011C6F3 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pokedex.json; path = ../../../pokemon.json/pokedex.json; sourceTree = "<group>"; };
 		1812E512248C77F10011C6F3 /* BaseStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseStatus.h; sourceTree = "<group>"; };
 		1812E513248C77F10011C6F3 /* BaseStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseStatus.m; sourceTree = "<group>"; };
+		1812E515248C7BC40011C6F3 /* pokedex.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
 		18D3F096248C716A00A9D6A5 /* pokedex-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokedex-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3F099248C716A00A9D6A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D3F09A248C716A00A9D6A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		1812E50F248C76DC0011C6F3 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				1812E510248C77040011C6F3 /* pokedex.json */,
+				1812E515248C7BC40011C6F3 /* pokedex.json */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1812E511248C77040011C6F3 /* pokedex.json in Resources */,
+				1812E516248C7BC40011C6F3 /* pokedex.json in Resources */,
 				18D3F0A9248C716D00A9D6A5 /* LaunchScreen.storyboard in Resources */,
 				18D3F0A6248C716D00A9D6A5 /* Assets.xcassets in Resources */,
 			);

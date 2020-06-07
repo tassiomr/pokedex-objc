@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeController : UIViewController
-
-
+@interface HomeController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, nonnull) UITableView *tableView;
 @end
-
